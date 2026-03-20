@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Tutorial(title: String, overview: String, detail: String, modifier: Modifier = Modifier) {
     val headerImage = painterResource(id = R.drawable.bg_compose_background)
-    Column (modifier = modifier) {
+    Column(modifier = modifier) {
         Image(
             painter = headerImage,
             contentDescription = null
@@ -72,12 +72,12 @@ fun Tutorial(title: String, overview: String, detail: String, modifier: Modifier
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun TutorialPreview() {
     LearnTogetherTheme {
         Tutorial(
             stringResource(R.string.tutorial_title),
             stringResource(R.string.tutorial_overview),
             stringResource(R.string.tutorial_detail)
-            )
+        )
     }
 }
